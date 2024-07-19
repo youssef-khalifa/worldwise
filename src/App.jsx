@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Product from "./pages/Product";
@@ -7,18 +6,19 @@ import Homepage from "./pages/Homepage";
 import PageNotFound from "./pages/PageNotFound";
 import AppLayout from "./pages/AppLayout";
 import Login from "./pages/Login";
+
 import { CitiesProvider } from "./contexts/CitiesContext";
-import { AuthProvider } from "./contexts/FakeAuthContext";
+// import { AuthProvider } from "./contexts/FakeAuthContext";
+// import ProtectedRoute from "./pages/ProtectedRoute";
 
 import CityList from "./components/CityList";
 import City from "./components/City";
 import Form from "./components/Form";
 import CountryList from "./components/CountryList";
-import SpinnerFullPage from "./components/SpinnerFullPage";
-
 
 function App() {
   return (
+    // <AuthProvider></AuthProvider>
     <CitiesProvider>
       <BrowserRouter>
         <Routes>

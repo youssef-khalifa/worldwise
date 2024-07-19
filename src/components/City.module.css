@@ -1,3 +1,7 @@
+*::-webkit-scrollbar {
+  display: none; /* Hide scrollbars for Webkit browsers */
+}
+
 .city {
   padding: 2rem 3rem;
   max-height: 70%;
