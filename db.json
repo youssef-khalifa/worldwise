@@ -1,5 +1,4 @@
-{
-  "cities": [
+[
     {
       "cityName": "Lisbon",
       "country": "Portugal",
@@ -85,4 +84,3 @@
       }
     }
   ]
-}

@@ -8,7 +8,7 @@ import {
   useCallback,
 } from "react";
 
-const BASE_URL = "http://localhost:9000";
+const BASE_URL = "https://my-json-server.typicode.com/youssef-khalifa/worldwise/db";
 
 const CitiesContext = createContext();
 
@@ -95,6 +95,7 @@ function CitiesProvider({ children }) {
       try {
         const res = await fetch(`${BASE_URL}/cities/${id}`);
         const data = await res.json();
+        console.log(res,data)
         dispatch({ type: "city/loaded", payload: data });
       } catch {
         dispatch({
