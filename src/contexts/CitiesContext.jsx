@@ -8,7 +8,7 @@ import {
   useCallback,
 } from "react";
 
-const BASE_URL = "https://my-json-server.typicode.com/youssef-khalifa/worldwise/db";
+const BASE_URL = "https://669da47f15704bb0e3067258.mockapi.io/worldwise";
 
 const CitiesContext = createContext();
 
